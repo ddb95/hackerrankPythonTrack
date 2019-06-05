@@ -9,10 +9,12 @@ if __name__ == '__main__':
     set_arr1_results = set_arr1.difference(set_arr)
     lst = list(set_arr_results)
     lst1 = list(set_arr1_results)
-    for i in range(lst):
-        print(lst[i])
-        print('\n')
-    for i in range(lst1):
-        print(lst1[i])
-        print('\n')
+    main_list = lst + lst1
+    main_list = sorted(main_list)
+    for i in range(len(main_list)):
+        print(main_list[i])
 
+
+
+# a, b = [set(input().split()) for _ in range(4)][1::2]
+# print(*sorted(a ^ b, key=int), sep='\n')
